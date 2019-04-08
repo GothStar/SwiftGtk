@@ -4,7 +4,7 @@ SwiftGtk is a experimental Gtk+ binding for Swift that tries to make usage of Gt
 
 ## Dependencies
 
-You need to have Swift 3.1 or higher installed on your computer (tested with 3.1.1 bundled with Xcode 8.3.3) and depending on your platform you need to install Gtk+3. On Mac OS X you can also build the project with Xcode.
+You need to have Swift 4.2 or higher installed on your computer (tested with Swift 4.2.4 using CLion) and depending on your platform you need to install Gtk+3. On Mac OS X you can also build the project with Xcode.
 
 ### Mac OS X
 
@@ -19,7 +19,7 @@ brew install gtk+3
 You need to have Gtk+3 and Clang installed on your machine. You can easily install them with `apt-get`.
 
 ```bash
-sudo apt-get install libgtk-3-dev clang
+sudo apt install libgtk-3-dev clang
 ```
 
 ## Usage
