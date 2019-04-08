@@ -32,7 +32,7 @@ import PackageDescription
 let package = Package(
     name: "SwiftGtkApplication",
     dependencies: [
-        .Package(url: "https://github.com/TomasLinhart/SwiftGtk", Version(0, 3, 1))
+        .package(url: "https://github.com/GothStar/SwiftGtk", .brunch: "Swift-4.2")
     ]
 )
 ```
