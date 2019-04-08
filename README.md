@@ -33,7 +33,12 @@ import PackageDescription
 let package = Package(
     name: "SwiftGtkApplication",
     dependencies: [
-        .package(url: "https://github.com/GothStar/SwiftGtk", .brunch: "Swift-4.2")
+    .package(url: "https://github.com/GothStar/SwiftGtk", .branch("Swift-4.2"))
+    ],
+    targets: [
+    .target(name: "SwiftGtkApplication",
+            dependencies: ["SwiftGtk"],
+            path: "Sources"), //path to your Main.swift
     ]
 )
 ```
