@@ -56,7 +56,7 @@ app.run { window in
         newWindow.title = "Just a window"
         newWindow.defaultSize = Size(width: 200, height: 200)
 
-        let image = Image(filename: "GTK.png")
+        let image = Image(filename: "Resources/GTK.png")
 
         newWindow.add(image)
 

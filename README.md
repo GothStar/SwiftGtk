@@ -27,12 +27,18 @@ sudo apt install libgtk-3-dev clang
 SwiftGtk supports [Swift Package Manager](https://github.com/apple/swift-package-manager) so you only need to add SwiftGtk to your `Package.swift`.
 
 ```swift
+// swift-tools-version:4.2
 import PackageDescription
 
 let package = Package(
     name: "SwiftGtkApplication",
     dependencies: [
-        .Package(url: "https://github.com/TomasLinhart/SwiftGtk", Version(0, 3, 1))
+    .package(url: "https://github.com/GothStar/SwiftGtk", .branch("Swift-4.2"))
+    ],
+    targets: [
+    .target(name: "SwiftGtkApplication",
+            dependencies: ["SwiftGtk"],
+            path: "Sources"), //path to your Main.swift
     ]
 )
 ```
